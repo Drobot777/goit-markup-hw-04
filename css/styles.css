@@ -402,6 +402,39 @@ img {
   width: 264px;
   color: var(--bord-color);
 }
+.footer-container {
+  display: flex;
+  padding: 0;
+  margin: 0;
+}
+.container-logo {
+  margin-right: 120px;
+}
+.social-list {
+  display: inline-flex;
+  gap: 16px;
+}
+.social-list .link {
+  width: 40px;
+  height: 40px;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.1);
+}
+.social-list .link:hover,
+.social-list .link:focus {
+  background-color: #31d0aa;
+}
+.container-social .title {
+  margin-bottom: 16px;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: #ffffff;
+}
 
 /* ---------------portfolio------------------- */
 .portfolio {
@@ -438,6 +471,8 @@ img {
   background: #404bbf;
   color: var(--primary-bg-color);
   border-color: transparent;
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 2px 1px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 .portfolio-item {
   display: flex;
@@ -454,7 +489,10 @@ img {
 .portfolio-item .item:nth-last-child(-n + 3) {
   margin-bottom: 0;
 }
-
+.portfolio-item .item:hover,
+.portfolio-item .item:focus {
+  box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08);
+}
 .portfolio .title {
   margin-bottom: 8px;
   font-weight: 500;
